@@ -51,6 +51,13 @@ CodeShare/CMSAdminControls/CKeditor/**
 !CodeShare/Custom
 !CodeShare/Custom/**
 
+!CodeShare/bin
+CodeShare/bin/**
+
+!CodeShare/bin/ImageResizer*
+
+
+
 *.zip
 Thumbs.db
 ehthumbs.db
