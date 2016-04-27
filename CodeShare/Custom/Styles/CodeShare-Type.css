@@ -1,0 +1,420 @@
+﻿/*
+# Type
+
+Icons demo [link](/vt/fonts/icomoon/demo/demo.html)
+*/
+
+
+@font-face {
+  font-family: 'Rokkitt';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rokkitt'), url(http://fonts.gstatic.com/s/rokkitt/v8/Uu8b3yBtxQPmPTMr0WQ_CA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Rokkitt';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rokkitt Bold'), local('Rokkitt-Bold'), url(http://fonts.gstatic.com/s/rokkitt/v8/Mef17w3J4CtS0lw4Wa_8r_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Lato Black'), local('Lato-Black'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/BVtM30trf7q_jfqYeHfjtA.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Lato Italic'), local('Lato-Italic'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/oUan5VrEkpzIazlUe5ieaA.woff) format('woff');
+}
+
+html,
+body {
+	font-size: 16px;
+	color:#666;
+}
+
+
+body {
+	font-family: "Lato", "sans-serif", sans-serif, arial;
+	font-weight: normal;
+	font-style: normal;
+}
+
+div, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*
+## Headings
+
+use ```alternate``` for lighter version
+
+```
+	<h1>Heading 1 - 60px <small>Small Text</small></h1>
+	<h2>Heading 2 - 43px <small>Small Text</small></h2>
+	<h3>Heading 3 - 30px <small>Small Text</small></h3>
+	<h4>Heading 4 - 24px <small>Small Text</small></h4>
+	<h5>Heading 5 - 16px <small>Small Text</small></h5>
+	<h6>Heading 6 - 10px <small>Small Text</small></h6>
+
+	<h1 class="alternate">Heading 1 - 60px <small>Small Text</small></h1>
+	<h2 class="alternate">Heading 2 - 43px <small>Small Text</small></h2>
+	<h3 class="alternate">Heading 3 - 30px <small>Small Text</small></h3>
+	<h4 class="alternate">Heading 4 - 24px <small>Small Text</small></h4>
+	<h5 class="alternate">Heading 5 - 16px <small>Small Text</small></h5>
+	<h6 class="alternate">Heading 6 - 10px <small>Small Text</small></h6>
+```
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Rokkitt", "serif";
+	font-style: normal;
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
+	line-height: 1.2;
+	margin-bottom: 10px;
+}
+
+h5, h6 {
+	font-family: "Lato", "sans-serif", sans-serif, arial;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+	font-size: 60%;
+	color: inherit;
+	line-height: 0;
+}
+
+h1.alternate,
+h2.alternate,
+h3.alternate,
+h4.alternate,
+h5.alternate,
+h6.alternate {
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 3.75em;
+}
+
+h2 {
+	font-size: 2.68em;
+}
+
+h3 {
+	font-size: 1.875em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1em;
+	font-family: "Lato", "sans-serif", sans-serif, arial;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: 0.75em;
+	font-family: "Lato", "sans-serif", sans-serif, arial;
+	text-transform: uppercase;
+}
+
+
+/*
+## Default link and body copy
+	
+```
+	<p><a href="#">Placeat</a> dreamcatcher <em>letterpress</em> helvetica <strong>ut vinyl</strong> voluptate <small>street-art</small>. Fixie etsy gentrify art totally art before. Gluten reprehenderit kale art Pinterest.</p>
+	<p class="fixie"></p>
+	<p class="fixie"></p>
+```
+*/
+
+
+.link {
+	color: #099;
+	text-decoration: none;
+	line-height: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+em,
+i {
+	font-style: italic;
+	line-height: inherit;
+}
+
+strong,
+b {
+	font-weight: bold;
+	line-height: inherit;
+}
+
+small {
+	font-size: 60%;
+	line-height: inherit;
+}
+
+/*
+## Unstyled Link
+
+reverts all link styles
+
+```
+	<p><a class="unstyled" href="#">This is a link</a> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+```
+*/
+
+a.unstyled {
+	color: #333;
+	font-family: inherit;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}
+
+a.unstyled:focus,
+a.unstyled:hover {
+	text-decoration: none;
+}
+
+
+p {
+	font-family: inherit;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.4;
+	margin-bottom: 1em;
+	margin-top: 0;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+
+/*
+## Unordered List
+```
+<ul>
+	<li class="fixie"></li>
+	<li class="fixie"></li>
+	<li class="fixie"></li>
+	<li class="fixie"></li>
+	<li class="fixie"></li>
+	<li class="fixie"></li>
+</ul>
+```
+*/
+
+ul {
+	padding-left: 20px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	line-height: 1.4;
+}
+
+/*
+## Unstyled List
+
+```
+<ul class="unstyled">
+	<li class="fixie"></li>
+	<li class="fixie"></li>
+	<li class="fixie"></li>
+	<li class="fixie"></li>
+	<li class="fixie"></li>
+	<li class="fixie"></li>
+</ul>
+```
+*/
+
+ul.unstyled {
+	list-style: none;
+	padding-left: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	line-height: normal;
+}
+
+
+/*
+## Seperators
+
+```
+	<hr />
+```
+*/
+
+
+/*
+## Text Alignment
+
+```
+	Text left: <br />
+	<p class="text-left fixie"></p>
+
+	Text right: <br />
+	<p class="text-right fixie"></p>
+
+	Text center: <br />
+	<p class="text-center fixie"></p>
+
+	Text justify: <br />
+	<p class="text-justify fixie"></p>
+```
+*/
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+
+.print-only {
+	display: none !important;
+}
+
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		/* Black prints faster: h5bp.com/s */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group;
+		/* h5bp.com/t */
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 0.5cm;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+
+	.hide-on-print {
+		display: none !important;
+	}
+
+	.print-only {
+		display: block !important;
+	}
+
+	.hide-for-print {
+		display: none !important;
+	}
+
+	.show-for-print {
+		display: inherit !important;
+	}
+}
+
+@media screen and (max-width: 480px) {
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1;
+    }
+    h2 {
+        font-size: 1.68em;
+    }
+}
